@@ -133,7 +133,7 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download all python codes from
 \begin{lstlisting}
-https://github.com/Vallidevibolla/valli/blob/main/Collinear.py
+https://github.com/Vallidevibolla/vallidevi/blob/main/Collinear.py
 \end{lstlisting}
 %
 and latex-tikz codes from
@@ -157,17 +157,7 @@ As,given that the points are collinear,
 \begin{align}
 \myvec{6&-2\\-3&4\\k&3}
 \end{align}
-\begin{align}
-\frac{1}{2}\mydet{1&1&1\\A&B&C}&=0\\
-\implies\mydet{1&1&1\\k&6&-3\\3&-2&4}&=0\\
-\implies -6K-9&=0\\
-\implies {k}&={-3/2}
-\end{align}
-\section{Alternative Method}
-As,given that the points are collinear,
-\begin{align}
-\myvec{6&-2\\-3&4\\k&3}
-\end{align}
+
 \begin{align*}\\
 
 \myvec{k-6&3-(-2)\\6-(-3)&-2-4}\\
@@ -191,45 +181,5 @@ As,given that the points are collinear,
   \caption{collinear}
   \label{collinear points}
 \end{figure}
-%
-\subsection{prove that}
-These points are collinear and forms a line 
-\begin{align}
-\vec{A}=\myvec{\frac{-3}{2}\\3} \\
-\vec{B}=\myvec{6\\-2}\\
-\vec{C}=\myvec{-3\\4}
-\end{align}
-\begin{doc}
- The direction vectors of $AB$ and $BC$ are 
-\begin{align}
-\vec{B}-\vec{A} &= \myvec{\frac{15}{2}\\-5}
-\\
-\vec{C}-\vec{A} &= \myvec{\frac{-3}{2}\\1}
-\end{align}
-%
-If $\vec{A}, \vec{B}, \vec{C}$ form a line, then, $AB$ and $AC$ should have the same direction vector. Hence, there exists a $k$ such that
-\begin{align}
-\vec{B}-\vec{A} &= k\brak{\vec{C}-\vec{B}}
-\\
-\implies \vec{B} &= \frac{k\vec{C} +\vec{A}}{k+1}
-\label{eq:tri_geo_ex_caorth_section}
-\end{align}
-%
-\begin{align}
- \vec{B}-\vec{A} &= k\brak{\vec{C}-\vec{A}}
-\\
-\implies {\myvec{\frac{15}{2}\\-5} &= k \myvec{\frac{-3}{2}\\1}}
-\\
-\implies {\vec{k} &= $-5$}
-\end{align}
-Since 
-\begin{align}
-\vec{B}-\vec{A} &= k\brak{\vec{C}-\vec{A}},
-\end{align}
-%
-the points are collinear and form a line.  
-Hence it is proved
 
- \end{doc}
- 
 \end{document}

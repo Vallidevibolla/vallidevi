@@ -1,0 +1,235 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+\usepackage{float}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+\usepackage{color} %%
+\usepackage{array} %%
+\usepackage{longtable} %%
+\usepackage{calc} %%
+\usepackage{multirow} %%
+\usepackage{hhline} %%
+\usepackage{ifthen} %%
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{} %%
+
+\lstset{
+%language=C,
+frame=single,
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ASSIGNMENT 1}
+\author{Valli Devi Bolla}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from
+\begin{lstlisting}
+https://github.com/Vallidevibolla/valli/blob/main/Collinear.py
+\end{lstlisting}
+%
+and latex-tikz codes from
+%
+\begin{lstlisting}
+https://github.com/Vallidevibolla/valli/blob/main/problem14.tex
+\end{lstlisting}
+%
+\section{Question No.14}
+Find the value of $k$,if the points \myvec{k\\3}, 
+\myvec{6\\-2} and \myvec{-3\\4} are collinear.
+\section{Solution}
+Let
+\begin{align}
+\vec{A}=\myvec{k\\3} \\
+\vec{B}=\myvec{6\\-2}\\
+\vec{C}=\myvec{-3\\4}
+\end{align}
+ 
+As,given that the points are collinear,
+\begin{align}
+\myvec{6&-2\\-3&4\\k&3}
+\end{align}
+\begin{align}
+\frac{1}{2}\mydet{1&1&1\\A&B&C}&=0\\
+\implies\mydet{1&1&1\\k&6&-3\\3&-2&4}&=0\\
+\implies -6K-9&=0\\
+\implies {k}&={-3/2}
+\end{align}
+\section{Alternative Method}
+As,given that the points are collinear,
+\begin{align}
+\myvec{6&-2\\-3&4\\k&3}
+\end{align}
+\begin{align*}\\
+
+\myvec{k-6&3-(-2)\\6-(-3)&-2-4}\\
+\rightarrow
+\myvec{k-6&5\\9&-6}
+\xleftrightarrow[\rowinterchange]{\myvec{R_2\rightarrow R_1}}
+\myvec{9&-6\\k-6&5}\\
+\xrightarrow[\rowdivision]{\myvec{R_1\rowdivision/3}}
+\myvec{3&-2\\k-6&5}\\
+\longrightarrow
+\myvec{3&-2\\0&3\times5-(-2\times(k-6)}
+\end{align*}
+\implies{15+2K-12{=}0}\\ 
+\implies{k}={-3/2}
+
+ $\therefore$ Finally the value of $k$ is $\frac{-3}{2}$
+ 
+ 
+ \begin{figure}[h!]
+\includegraphics[width=\linewidth]{Collinear.png}
+  \caption{collinear}
+  \label{collinear points}
+\end{figure}
+%
+\subsection{prove that}
+These points are collinear and forms a line 
+\begin{align}
+\vec{A}=\myvec{\frac{-3}{2}\\3} \\
+\vec{B}=\myvec{6\\-2}\\
+\vec{C}=\myvec{-3\\4}
+\end{align}
+\begin{doc}
+ The direction vectors of $AB$ and $BC$ are 
+\begin{align}
+\vec{B}-\vec{A} &= \myvec{\frac{15}{2}\\-5}
+\\
+\vec{C}-\vec{A} &= \myvec{\frac{-3}{2}\\1}
+\end{align}
+%
+If $\vec{A}, \vec{B}, \vec{C}$ form a line, then, $AB$ and $AC$ should have the same direction vector. Hence, there exists a $k$ such that
+\begin{align}
+\vec{B}-\vec{A} &= k\brak{\vec{C}-\vec{B}}
+\\
+\implies \vec{B} &= \frac{k\vec{C} +\vec{A}}{k+1}
+\label{eq:tri_geo_ex_caorth_section}
+\end{align}
+%
+\begin{align}
+ \vec{B}-\vec{A} &= k\brak{\vec{C}-\vec{A}}
+\\
+\implies {\myvec{\frac{15}{2}\\-5} &= k \myvec{\frac{-3}{2}\\1}}
+\\
+\implies {\vec{k} &= $-5$}
+\end{align}
+Since 
+\begin{align}
+\vec{B}-\vec{A} &= k\brak{\vec{C}-\vec{A}},
+\end{align}
+%
+the points are collinear and form a line.  
+Hence it is proved
+
+ \end{doc}
+ 
+\end{document}

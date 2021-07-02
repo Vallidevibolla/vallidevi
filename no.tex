@@ -155,21 +155,20 @@ Let
  
 As,given that the points are collinear,
 \begin{align}
-\myvec{6&-2\\-3&4\\k&3}
+\mymacro{[&(A-B)&(B-C)]^T}
 \end{align}
-
-\begin{align*}\\
-
+\begin{alig}
 \myvec{k-6&3-(-2)\\6-(-3)&-2-4}\\
 \rightarrow
 \myvec{k-6&5\\9&-6}
 \xleftrightarrow[\rowinterchange]{\myvec{R_2\rightarrow R_1}}
 \myvec{9&-6\\k-6&5}\\
-\xrightarrow[\rowdivision]{\myvec{R_1\rowdivision/3}}
+\xrightarrow[\rowdivision]{\myvec{R_1\rightarrow R_1\rowdivision/3}}
 \myvec{3&-2\\k-6&5}\\
 \longrightarrow
-\myvec{3&-2\\0&3\times5-(-2\times(k-6)}
-\end{align*}
+\myvec{3&-2\\0&3\times5-(-2\times(k-6)}\\
+\end{alig}
+
 \implies{15+2K-12{=}0}\\ 
 \implies{k}={-3/2}
 
